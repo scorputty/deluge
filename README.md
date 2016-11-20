@@ -17,6 +17,13 @@ docker run -d -h $(hostname) \
   -v ${VOL_DOWNLOADS}:/downloads \
   -v ${VOL_INCOMPLETE_DOWNLOADS}:/incomplete-downloads \
   -p ${LOCAL_PORT1}:8112 \
+  -p 58846:58846 \
+  -p 58946:58946 \
+  -v ${VOL_DOWNLOADS}:/downloads \
+  -v ${VOL_CONFIG}:/config \
+  -e TZ=Europe/Amsterdam \
+  -e PUID=1000 \
+  -e PGID=1000 \
   --name=deluge --restart=always cryptout/deluge
 ```
 
