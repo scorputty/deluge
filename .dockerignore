@@ -1,0 +1,15 @@
+# Git files
+.git
+.gitignore
+.github
+.gitattributes
+
+# Local config files
+
+# Build files
+build.sh
+buildCache.sh
+rundocker.sh
+
+# Information files
+README.md

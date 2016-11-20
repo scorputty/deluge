@@ -1,0 +1,26 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    - appUser="media"
+    - appGroup="1000"
+
+install:
+  - docker build --rm --no-cache -t cryptout/deluge ../deluge
+
+script:
+  - ./rundocker.sh
+  - sleep 10
+  - bats tests/
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push cryptout/deluge:latest;
+    fi
+
+notifications:
+  email: false
