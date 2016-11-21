@@ -56,7 +56,7 @@ Edit rundocker.sh (this will be replaced by docker-compose soon...).
 
 ### WebGUI
 To reach the WebGUI go to - (http://localhost:8112).
-Or replace localhost with your target IP.
+Or replace localhost with your target IP. Login with admin/deluge.
 
 ## Info
 * Shell access whilst the container is running: `docker exec -it deluge /bin/sh`
