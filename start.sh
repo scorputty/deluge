@@ -6,6 +6,8 @@ set -e
 test -d /config || exit 1
 # same goes for downloads
 test -d /downloads || exit 2
+# remove stale .pid
+test -f /config/deluged.pid && rm /config/deluged.pid
 
 # start deluge daemon
 exec /usr/bin/deluged -c /config -d -l /config/daemon.log -L info &

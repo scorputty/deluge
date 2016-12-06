@@ -50,9 +50,12 @@ RUN \
 	      pip && \
  pip install --no-cache-dir -U \
 	      crypto \
+        mako \
 	      markupsafe \
+        pyopenssl \
 	      service_identity \
 	      six \
+        twisted \
 	      zope.interface && \
 
 # cleanup
