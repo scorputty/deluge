@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/scorputty/deluge.svg?branch=master)](https://travis-ci.org/scorputty/deluge) [![](https://images.microbadger.com/badges/image/cryptout/deluge.svg)](https://microbadger.com/images/cryptout/deluge "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/cryptout/deluge.svg)](https://microbadger.com/images/cryptout/deluge "Get your own version badge on microbadger.com")
 
-# Docker Deluge (Alpine Base)
+# Docker Deluge (Alpine)
 
 This is a Dockerfile to set up "Deluge" - (http://deluge-torrent.org/).
 
