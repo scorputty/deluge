@@ -1,6 +1,6 @@
 FROM alpine:edge
 MAINTAINER scorputty
-LABEL Description="Deluge" Vendor="Stef Corputty" Version="1.3.13"
+LABEL Description="Deluge" Vendor="Stef Corputty" Version="1.0.1"
 
 # variables
 ENV appUser="media"
@@ -47,6 +47,7 @@ RUN \
 
 # install pip packages
  pip install --no-cache-dir -U \
+        incremental \
 	      pip && \
  pip install --no-cache-dir -U \
 	      crypto \
